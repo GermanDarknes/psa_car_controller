@@ -98,17 +98,6 @@ class Energy(object):
         """
         return self._created_at
 
-    @property
-    def created_at(self):
-        """Gets the created_at of this Energy.  # noqa: E501
-
-        Date when the resource has been created.  # noqa: E501
-
-        :return: The created_at of this Energy.  # noqa: E501
-        :rtype: datetime
-        """
-        return self._created_at
-
     @created_at.setter
     def created_at(self, created_at):
         """Sets the created_at of this Energy.
