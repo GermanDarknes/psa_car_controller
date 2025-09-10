@@ -837,3 +837,12 @@
   fuel_capacity: 44
   abrp_name:
   reg: VXKUPHNEKR 
+- !CarModel
+  name: Opel Corsa Electric GS (2025)
+  battery_power: 54
+  fuel_capacity: 0
+  abrp_name:
+  reg: VXKUHZKW4S 
+  max_elec_consumption: 70
+  max_fuel_consumption: 0
+  
