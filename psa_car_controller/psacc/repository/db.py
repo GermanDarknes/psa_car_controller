@@ -269,7 +269,8 @@ class Database:
 
     # pylint: disable=too-many-arguments,too-many-positional-arguments
     @staticmethod
-    def record_position(weather_api, vin, mileage, latitude, longitude, altitude, date, level, level_fuel, moving, temp):
+    def record_position(weather_api, vin, mileage, latitude, longitude, altitude, date, level, level_fuel,
+                        moving, temp):
         if mileage == 0:  # fix a bug of the api
             logger.error("The api return a wrong mileage for %s : %f", vin, mileage)
         else:

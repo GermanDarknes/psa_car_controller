@@ -199,8 +199,8 @@ class PSAClient:
         temp = getattr(getattr(getattr(car.status, "environment", None), "air", None), "temp", None)
 
         logger.debug("vin:%s longitude:%s latitude:%s date:%s mileage:%s level:%s charge_date:%s level_fuel:"
-                     "%s moving:%s temp:%s", car.vin, longitude, latitude, date, mileage, level, charge_date, level_fuel,
-                     moving, temp)
+                     "%s moving:%s temp:%s", car.vin, longitude, latitude, date, mileage, level, charge_date,
+                     level_fuel, moving, temp)
         Database.record_position(self.weather_api, car.vin, mileage, latitude, longitude, altitude, date, level,
                                  level_fuel, moving, temp)
         self.abrp.call(car, Database.get_last_temp(car.vin))
